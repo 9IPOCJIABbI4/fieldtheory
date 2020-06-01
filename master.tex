@@ -132,23 +132,36 @@ F_{\mu\nu}=\partial_\mu A_\nu -\partial_\nu A_\mu
 	\mathbf{v}_{dr}=\frac{c}{\mathbf{B}^2}\mathbf{E}\times\mathbf{B}
 .\] 
 \subsection{Магнитное зеркало.}
-hi
+Заряженная частица движется в магнитном поле по спирали с радиусом $r=mv_{\bot}/eH$. Если поле переменное, то адиабатически сохраняется 
+\[I=\oint p_{\bot} dq_{\bot}=2\pi r m v_{\bot}\sim \frac{v_{\bot}^2}{H}\]
+При движении в магнитном поле энергия сохраняется, поэтому $v_{\bot}^2$ ограничено сверху и частица не сможет преодолеть барьер в некоторое $H_{\max}$
 \subsection{Вычислить среднее $\left<\left(\vec{a},\,\vec{n}\right)
 \left( \vec{b},\,\vec{n} \right) \right>$ по всем направлениям единичного
 вектора $\vec{n}$ при постоянных  $\vec{a}$, $\vec{b}$}
-hi
+$\langle n_i n_i\rangle$ не зависит от $i$. Из независимости компонент \[\sum_{i=1}^3\langle n_i n_i\rangle=\langle\sum_{i=1}^3 n_i n_i\rangle=1\Rightarrow \langle n_i n_i\rangle=1/3\]
+Отсюда $\langle n_i n_k\rangle=\delta_{ik}/3$. $\langle(\vec{a},\vec{n})(\vec{b},\vec{n})\rangle=\langle a_i n_i b_k n_k\rangle=a_i b_k \delta_{ik}/3=(\vec{a},\vec{b})/3$
 \subsection{Вычислить среднее $\left<\left[\vec{a},\,\vec{n}\right]
 \left( \vec{b},\,\vec{n} \right) \right>$ по всем направлениям единичного
 вектора $\vec{n}$ при постоянных  $\vec{a}$, $\vec{b}$}
-hi
+$\langle[\vec{a},\vec{n}](\vec{b},\vec{n})\rangle=\langle \epsilon_{ijk} a_j n_k b_l n_l\rangle=[\vec{a},\vec{b}]/3$
 \subsection{Четыре-вектор тока и его компоненты.}
-hi
+$de=\rho dV$ - количество заряда в области (скаляр). \[de dx^i=\rho dV dt \frac{dx^i}{dt}\] $dV dt$ - скаляр, $de dx^i$ - 4-x вектор, $\rho dx^i/dt$ - 4-х вектор тока $j^i$. $j^i=(c\rho,\rho\vec{v})=(c\rho,\vec{j})$
 \subsection{Уравнение непрерывности в четырехмерной и трехмерной форме.}
-hi
+\[\frac{\partial j^i}{\partial x^i}=0\]
+\[\frac{\partial \rho}{\partial t}+\operatorname{div} j=0 \]
 \subsection{Плотность энергии электромагнитного поля.}
-hi
+\[
+\frac{1}{c}\frac{\partial \mathbf{E}}{\partial t}\mathbf{E}+\frac{1}{c}\frac{\partial \mathbf{H}}{\partial t}\mathbf{H}=\mathbf{E}\left(\operatorname{rot}\mathbf{H}-\frac{4\pi}{c}\mathbf{j}\right)-\mathbf{H}\operatorname{rot}\mathbf{E}=-\frac{4\pi}{c}\mathbf{E}\mathbf{j}-\operatorname{div}{[\mathbf{E},\mathbf{H}]}
+\]
+\[
+\frac{1}{c}\frac{\partial \mathbf{E}}{\partial t}\mathbf{E}+\frac{1}{c}\frac{\partial \mathbf{H}}{\partial t}\mathbf{H}=\frac{1}{2c}\frac{\partial (\mathbf{E}^2+\mathbf{H}^2)}{2}
+\]
+\[\int \mathbf{E}\mathbf{j} dV=\int \mathbf{E}\rho dV \mathbf{v}=\sum e\mathbf{E}\mathbf{v}=\frac{dE_{\text{кин}}}{dt}\]
+\[\frac{d}{dt}\left[E_{\text{кин}}+\int dV\frac{\mathbf{E}^2+\mathbf{H}^2}{8\pi}\right]=-\int dV\frac{c}{4\pi}\operatorname{div}{[\mathbf{E},\mathbf{H}]}=-\oint dS \frac{c}{4\pi}[\mathbf{E},\mathbf{H}]\]
+Слева записано изменение полной энергия системы заключенной в некоторой оболочке, а справа то что эта энергия изменяется при излучении из оболочки. Полная энергия электромагнитного поля 
+\[W=\frac{\mathbf{E}^2+\mathbf{H}^2}{8\pi}\]
 \subsection{Вектор Умова-Пойнтинга.}
-hi
+Из предыдущего билета \[\mathbf{S}=\frac{c}{4\pi}[\mathbf{E},\mathbf{H}]\]
 \subsection{Вектор потенциал $A$ для плоской и монохроматической
 электромагнитной
 волны.}
@@ -168,7 +181,7 @@ hi
 \subsection{Вычислить $\operatorname{grad} \frac{1}{\left| \vec{r} \right| }$}
 hi
 \subsection{Вычислить $\operatorname{grad}
-	\frac{1}{\overrightarrow{\left( \vec{k},\,\vec{r}\right)}}
+	\frac{1}{\left( \vec{k},\vec{r}\right)}
 $, где $\vec{k}$ --- постоянный вектор.}
 hi
 \subsection{Вычислить $\operatorname{grad} e ^{i\left( \vec{k},\,\vec{r}
